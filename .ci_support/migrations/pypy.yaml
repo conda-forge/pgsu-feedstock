@@ -11,6 +11,8 @@ __migrator:
   migration_number:  # Only use this if the bot messes up, putting this in will cause a complete rerun of the migration
     1
   bump_number: 1   # Hashes changed for cpython, so it's better to bump build numbers.
+  # do not use mamba to check if the issued PRs are solvable
+  check_solvable: false
 
 python:
   - 3.6.* *_cpython
@@ -19,12 +21,9 @@ python:
   - 3.6.* *_73_pypy   # [not win64]
 
 numpy:
-  - 1.14       # [not (aarch64 or ppc64le)]
-  - 1.14       # [not (aarch64 or ppc64le)]
-  - 1.14       # [not (aarch64 or ppc64le)]
-  - 1.16       # [aarch64 or ppc64le]
-  - 1.16       # [aarch64 or ppc64le]
-  - 1.16       # [aarch64 or ppc64le]
+  - 1.16
+  - 1.16
+  - 1.16
   - 1.18       # [not win64]
 
 python_impl:
