@@ -10,7 +10,7 @@ source:
   sha256: af33bc917b26cede741f53953f54e5cef9d6428bd56a68f37198ac7879e99e83
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - pgsu=pgsu.cli:run
   script: "{{ PYTHON }} -m pip install . -vv"
