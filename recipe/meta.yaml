@@ -21,7 +21,7 @@ requirements:
     - pip
     - python
   run:
-    - python >=3.5
+    - python
     - click
     - psycopg2 >=2.8.3
 
