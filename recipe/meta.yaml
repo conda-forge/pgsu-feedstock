@@ -10,18 +10,18 @@ source:
   sha256: bfad6a8505a7ad3412c5d4e958886a41f46cf6fa828f9f57d08fbbe3c1a629da
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   entry_points:
     - pgsu=pgsu.cli:run
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [ py > 38]
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python
   run:
-    - python
+    - python >=3.6
     - click
     - psycopg2 >=2.8.3
 
