@@ -1,5 +1,5 @@
 {% set name = "pgsu" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9fb3f3df5a79ef4a2b929d759e1181aa0d21a37462e2d1fd06711c884c24613b
+  sha256: 85b0b045d081245788163bd4471de7e902922726c0a77956e297c6d185e44290
 
 build:
   number: 0
