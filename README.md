@@ -1,11 +1,11 @@
-About pgsu
-==========
+About pgsu-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgsu-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aiidateam/pgsu
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgsu-feedstock/blob/main/LICENSE.txt)
 
 Summary: Connect to an existing PostgreSQL cluster as a postgres superuser and execute SQL commands.
 
