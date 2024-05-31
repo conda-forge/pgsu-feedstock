@@ -18,12 +18,13 @@ build:
 
 requirements:
   host:
+    - flit-core >=3.4,<4
     - python >=3.6
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - click
-    - psycopg2 >=2.8.3
+    - psycopg[binary] >=3.0
 
 test:
   imports:
