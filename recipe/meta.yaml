@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 51dbb8f2272deacc28f546af442a1411eb260b1da53e11d4f93ea90f2b1acf50
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - pgsu=pgsu.cli:run
@@ -19,14 +19,16 @@ build:
 requirements:
   host:
     - flit-core >=3.4,<4
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - click
     - psycopg[binary] >=3.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pgsu
   commands:
